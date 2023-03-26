@@ -7,10 +7,10 @@ void loop() {
  if(Serial.available())
   {
   char data = Serial.read();
-  if(data == '1')
+  if(data == 'led_1')
      digitalWrite(ledpin,HIGH);
   else
-   if(data == '0')  
+   if(data == 'led_0')  
      digitalWrite(ledpin,LOW); 
  }
 }
